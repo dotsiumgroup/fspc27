@@ -15423,5 +15423,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+	<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+	<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "2bb55d10-0fd5-4464-9806-7b2e0d728ee2",
+      notifyButton: { enable: false },
+      allowLocalhostAsSecureOrigin: true
+    });
+
+    // ব্যবহারকারীকে সাবস্ক্রাইব করার জন্য অনুরোধ দেখাবে (প্রয়োজন হলে)
+    await OneSignal.Slidedown.promptPush();
+  });
+	</script>
 </body>
 </html>
