@@ -1,3 +1,4 @@
+importScripts('https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js');
 /* BT Service Worker — সম্পূর্ণ ও চূড়ান্ত সংস্করণ
    নিয়ম: HTML সবসময় আগে সার্ভার থেকে আনে, না পেলে ক্যাশ থেকে দেখায়। Pull-to-Refresh সাপোর্টেড। */
 const CACHE_NAME = 'fspc27-cache-v10'; // প্রোজেক্টের নাম bt → rastv → fspc27, তাই ক্যাশ নামও বদলানো হলো (পুরোনো ক্যাশ অটো মুছে যাবে)
