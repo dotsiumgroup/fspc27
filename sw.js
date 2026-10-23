@@ -2,7 +2,7 @@
    নিয়ম: HTML সবসময় আগে সার্ভার থেকে আনে, না পেলে ক্যাশ থেকে দেখায়। Pull-to-Refresh সাপোর্টেড। */
 const CACHE_NAME = 'fspc27-cache-v10'; // প্রোজেক্টের নাম bt → rastv → fspc27, তাই ক্যাশ নামও বদলানো হলো (পুরোনো ক্যাশ অটো মুছে যাবে)
 const SCOPE_PATH = '/fspc27/';
-const PRECACHE = ['/fspc27/', '/fspc27/index.html', '/fspc27/manifest.json', '/fspc27/icon-192.png', '/fspc27/icon-512.png'];
+const PRECACHE = ['/fspc27/', '/fspc27/index.html', '/fspc27/manifest.json', '/fspc27/icons-192.png', '/fspc27/icons-512.png'];
 
 // ১. ইনস্টল ইভেন্ট: নতুন ক্যাশ তৈরি করে ফাইল ডাউনলোড করে রাখে
 self.addEventListener('install', (event) => {
